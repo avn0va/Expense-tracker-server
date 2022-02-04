@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "DISCLAIMER: To use this installer, you need permission to use SUDO. Do you wish to continue?"
+echo "Installing NPM"
+sudo apt install npm
+echo "Installing server depencies"
+cd server
+npm i colors dotenv express mongoose morgan
+npm i -D concurrently nodemon
+npm install
+echo "Installing client depencies"
+cd client
+npm i axios
+npm install
+cd ..
