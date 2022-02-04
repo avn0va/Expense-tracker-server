@@ -1,8 +1,0 @@
-#!/bin/bash
-
-npm i colors dotenv express mongoose morgan
-npm i -D concurrently nodemon
-npm install
-cd client
-npm i axios
-npm i react-i18next i18next i18next-http-backend i18next-browser-languagedetector --save
